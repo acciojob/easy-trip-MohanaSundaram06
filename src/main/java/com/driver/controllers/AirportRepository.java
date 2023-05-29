@@ -22,8 +22,9 @@ public class AirportRepository {
     public String getLargestAirportName(){
         String theAirport = "";
         int count = 0;
-
-        for(String name : airportHashMap.keySet()){
+        ArrayList<String> list = (ArrayList<String>) airportHashMap.keySet();
+        Collections.sort(list);
+        for(String name : list){
             if( count < airportHashMap.get(name).getNoOfTerminals()){
                 count = airportHashMap.get(name).getNoOfTerminals();
                 theAirport = name;
