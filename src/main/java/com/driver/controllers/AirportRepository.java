@@ -23,7 +23,7 @@ public class AirportRepository {
         String theAirport = "";
         int count = 0;
         ArrayList<String> list = new ArrayList<>(airportHashMap.keySet());
-
+        Collections.sort(list);
         for(String name : list){
             if( count < airportHashMap.get(name).getNoOfTerminals()){
                 count = airportHashMap.get(name).getNoOfTerminals();
