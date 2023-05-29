@@ -7,7 +7,7 @@ import com.driver.model.Passenger;
 import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Date;
+import java.util.*;
 
 public class AirportService {
 
